@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakta oss - Skrot och korn AB</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0KNQNGKZL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N0KNQNGKZL');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakta Skrot och korn AB för tjänster inom byggmaskiner, verktyg, och mer.">
+    <meta name="keywords" content="Skrot och Korn, byggmaskiner, verktyg, maskinuthyrning, bygg och rivning">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 60px; 
+        }
+        form > div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .staff-list {
+            margin-top: 20px;
+        }
+        .staff-member {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .staff-photo {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .staff-info {
+            flex: 1;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            padding: 15px 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        .contact-iframe {
+            display: block;
+            margin: auto; 
+            width: 100%; 
+            height: 200px; 
+            border: none;;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Hem</a> |
+        <a href="produkter.html">Produkter</a> |
+        <a href="kontakt.html">Kontakta oss</a> |
+        <a href="videogalleri.html">Videogalleri</a>
+    </nav>
+    <div class="content">
+        <h1>Kontakta oss</h1>
+        <form action="submit_form.php" method="POST">
+            <div>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="address">Adress:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <p>Kundtyp:</p>
+                <input type="radio" id="private" name="customer_type" value="private" checked>
+                <label for="private">Privat</label>
+                <input type="radio" id="business" name="customer_type" value="business">
+                <label for="business">Företag</label>
+            </div>
+            <div>
+                <p>Storlek på företaget (om företag):</p>
+                <input type="radio" name="company_size" value="1-100">
+                <label>1-100 anställda</label>
+                <input type="radio" name="company_size" value="101-1000">
+                <label>101-1000 anställda</label>
+                <input type="radio" name="company_size" value="1000+">
+                <label>Mer än 1000 anställda</label>
+            </div>
+            <div>
+                <label for="message">Din fråga:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Jag vill ha nyhetsbrev</label>
+                <input type="checkbox" id="contact_by_phone" name="contact_by_phone">
+                <label for="contact_by_phone">Jag vill bli kontaktad på telefon</label>
+            </div>
+            <button type="submit">Skicka</button>
+        </form>
+        <div class="staff-list">
+            <h2>Vårt Team</h2>
+            <div class="staff-member">
+                <img src="nisse.jpg" alt="Nisse" class="staff-photo">
+                <div class="staff-info">
+                    <strong>Nisse</strong><br>
+                    <a href="mailto:nisse@skrotkorn.se">nisse@skrotkorn.se</a>
+                </div>
+            </div>
+            <div class="staff-member">
+                <img src="kajsa.jpg" alt="Kajsa" class="staff-photo">
+                <div class="staff-info">
+                    <strong>Kajsa</strong><br>
+                    <a href="mailto:kajsa@skrotkorn.se">kajsa@skrotkorn.se</a>
+                </div>
+            </div>
+            <div class="staff-member">
+                <img src="olle.jpg" alt="Olle" class="staff-photo">
+                <div class="staff-info">
+                    <strong>Olle</strong><br>
+                    <a href="mailto:olle@skrotkorn.se">olle@skrotkorn.se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <iframe src="kontakt_info.html" class="contact-iframe" aria-label="Kontaktinformation" style="width:100%; height:200px; border:none; display:block; margin:auto;"></iframe>
+        &copy; 2024 Skrot och Korn AB
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

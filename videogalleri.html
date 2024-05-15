@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Videogalleri - Skrot och korn AB</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0KNQNGKZL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N0KNQNGKZL');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Se våra byggmaskiner och verktyg i aktion på vårt videogalleri.">
+    <meta name="keywords" content="Videogalleri, videor, bilder, Skrot och Korn, byggmaskiner">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #dae2f8, #d6a4a4);
+            color: #333;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 80px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+        video, iframe {
+            width: 100%;
+            height: 450px;
+        }
+        footer {
+            padding: 15px 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        .contact-iframe {
+            display: block;
+            margin: auto; 
+            width: 100%; 
+            height: 200px; 
+            border: none;;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Hem</a> |
+        <a href="produkter.html">Produkter</a> |
+        <a href="kontakt.html">Kontakta oss</a> |
+        <a href="videogalleri.html">Videogalleri</a>
+    </nav>
+    <div class="content">
+        <h1 style="margin-bottom: 20px;">Videogalleri</h1>
+        <div class="video-container">
+            <h2>Vår egen film</h2>
+            <video controls>
+                <source src="egen_film.mp4" type="video/mp4">
+                Din webbläsare stöder inte videouppladdning.
+            </video>
+        </div>
+        <div class="video-container">
+            <h2>How powerful bulldozers work – YouTube</h2>
+            <iframe src="https://www.youtube.com/embed/hJIBp98DztA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <iframe src="kontakt_info.html" class="contact-iframe" aria-label="Kontaktinformation" style="width:100%; height:200px; border:none; display:block; margin:auto;"></iframe>
+        &copy; 2024 Skrot och Korn AB
+    </footer>    
+</body>
+</html>
+
+
+
+
+
+
+
+
